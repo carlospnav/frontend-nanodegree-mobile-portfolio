@@ -486,7 +486,10 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 
-var scrollTop = (document.body.scrollTop / 1250);
+//Removed the RHS check for scrollTop from inside the function 
+//iterator so as to not have it called every time the function is invoked,
+//which would force a reflow for every iteration.
+var scrollTop = (document.body.scrollTop / 1250); 
 
 function updatePositions() {
   frame++;
