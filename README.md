@@ -16,6 +16,21 @@
 * Ngrok (provided in the repository).
 * Node.js installed.
 
+##Alterations: 
+
+###Index
+
+* Enabled Cache-Control and Emap tokens in simpleServer.js configurations.
+* Enabled Gzip compression in simpleServer.js configurations.
+* Minimized external JS file and the html.
+* Inlined CSS (since it wasn't too large) ir order to avoid another download blocking the parser/JS engine. 
+* Compressed images using responsive-images gulp plugin.
+* Simplified the tasks of minization and compression using Gulp.
+
+###Pizza
+
+* Removed the layout check from inside the iterator to prevent forced reflow.
+* Reworked the logics of the slider function to simplify unnecessary complexity and restrain DOM querying to a minimum.
 
 -------------------------------------------------------------------------------------------------------------------
 
