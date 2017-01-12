@@ -44,14 +44,4 @@ gulp.task('images', function(){
     .pipe(gulp.dest('dist/img'));
 });
 
-// gulp.task('largeImgs', function(){
-//   gulp.src('src/img/**/*.*')
-//   .pipe(responsive({
-//     '**/*.*':[{
-//       suffix: ''
-//     }]
-//   }))
-//   .pipe(gulp.dest('dist/img'));
-// });
-
 gulp.task('build', ['htmlmin', 'jsmin', 'cssmin']);
