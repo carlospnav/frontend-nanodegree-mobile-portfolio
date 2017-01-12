@@ -1,3 +1,24 @@
+#How to run it:
+
+* Clone the repository.
+* Open a console.
+* Navigate to the repository directory and run npm install to download the project's package.
+* Run npm simpleServer.js to start serving the files in Localhost over port 8000.
+* Open another console.
+* Navigato to the repository directory and run ./ngrok http 8000.
+* Copy the url given by ngrok and paste it in PageSpeed Insights to analyze it.
+* Open your browser and navigate to localhost port 8000 to view the website.
+* Navigate to /views/pizza.html and record a scroll event to confirm ~60fps.
+* Slide the Pizza Slider and confirm a less than 5ms on the execution.
+
+##Dependencies: 
+
+* Ngrok (provided in the repository).
+* Node.js installed.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
